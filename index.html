@@ -10,11 +10,16 @@
 <body>
     <div>
         <div class="wrapper">
-            <div class="watch">00:00:00</div>
+            <div class="watch">
+              <span id="minutes">00:</span>
+              <span id="seconds">00:</span>
+              <span id="milliseconds">00</span>
+              <!-- 00:00:00 -->
+            </div>
             <div class="controls">
-              <button><i class="fa fa-play" style="font-size:24px"></i></button>
-              <button><i class="fa-solid fa-stopwatch" style="font-size:24px"></i></button>
-              <button><i class="fa-solid fa-rotate-right"></i></button>
+              <button onclick="startTime()" id="start"><i class="fa fa-play" style="font-size:24px"></i></button>
+              <button id="lap"><i class="fa-solid fa-stopwatch" style="font-size:24px"></i></button>
+              <button id="restart"><i class="fa-solid fa-rotate-right"></i></button>
             </div>
           </div>
     

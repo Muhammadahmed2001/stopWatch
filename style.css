@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.timer-box {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -76,4 +76,28 @@ button:active .fa-solid {
 }
 .text{
     margin-left: 21px;
+}
+.stop{
+  background-color:#f15c5c;
+  display: none;
+}
+.fa-stop{
+  margin-left: 15px;
+}
+.fa-play{
+  margin-left: 15px;
+}
+.lap-time{
+  z-index: 9999;
+}
+.lap-div{
+  margin-right: 20px;
+ 
+}
+.lap-time{
+  background-color: #81f15c;
+  margin-top: 5px;
+  border-radius: 8px;
+  color: #ff0000;
+  font-weight: 600;
 }

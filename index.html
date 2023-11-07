@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
 </head>
+
 <body>
-    <div>
-        <div class="wrapper">
-            <div class="watch">
-              <span id="minutes">00:</span>
-              <span id="seconds">00:</span>
-              <span id="milliseconds">00</span>
-              <!-- 00:00:00 -->
-            </div>
-            <div class="controls">
-              <button onclick="startTime()" id="start"><i class="fa fa-play" style="font-size:24px"></i></button>
-              <button id="lap"><i class="fa-solid fa-stopwatch" style="font-size:24px"></i></button>
-              <button id="restart"><i class="fa-solid fa-rotate-right"></i></button>
-            </div>
-          </div>
+  <div>
+    <div class="timer-box">
+      <div id="lapDiv" class="lap-div">
+        <!-- <p class="lap-time">
+          01: 03: 06
+        </p> -->
+       
+      </div>
+      <div class="wrapper">
+        <div class="watch">
+        <span id="minutes">00:</span>
+        <span id="seconds">00:</span>
+        <span id="milliseconds">00</span>
+
+      </div>
+      <div class="controls">
+        <button onclick="startTime()" id="start"><i class="fa fa-play" style="font-size:24px"></i></button>
+        <button class="stop" onclick="stopTime()" id="stop"><i class="fa-solid fa-stop"
+            style="font-size:24px"></i></button>
+        <button onclick="timeLap()" id="lap"><i class="fa-solid fa-stopwatch" style="font-size:24px"></i></button>
+        <button onclick="reset()" id="restart"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </div>
+    </div>
     
-          
+
+
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
